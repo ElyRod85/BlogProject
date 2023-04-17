@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="front end, web design, seo, content strategist, freelance, copywriting, content writer, agile, project management, project manager, responsive design, wordpress, ecommerce, spanish translator"/>
         <meta name="description" content="Personal portfolio of Front-End Developer and Web Designer Eleonora Rodriguez"/>
-        <meta name="copyright" content="This portfolio project belongs to Eleonora Rodriguez"/>
+        <meta name="copyright" content="This portfolio sample belongs to Eleonora Rodriguez"/>
     
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Portfolio project by Eleonora Rodriguez / Front-End Developer & Web Designer"/>
@@ -16,8 +16,8 @@
         <meta name="twitter:image" content="./images/share-img.png">
         
         <link rel="icon" type="image/x-icon" href="favicon.ico">    
-        
-        <link rel="stylesheet" href="style-about.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/1d8da103c1.js" crossorigin="anonymous"></script>
         <title>Portfolio Sample by Eleonora Rodriguez / Front-End Developer & Web Designer</title>
     </head>
@@ -43,7 +43,7 @@
             </div>
 
             <div class="title">
-                <h1>Blog post page</h1>
+                <h1>Blog landing page</h1>
                 <p>Porfolio sample by Eleonora Rodriguez</p>
             </div>
 
@@ -91,79 +91,201 @@
                 
             </nav>
 
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 h-50" src="images/cherry-blossom-tree.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>This is the first slide</h5>
+                            <p>And this is the first slide's description</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-50" src="images/hd-wallpaper.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>This is the second slide</h5>
+                            <p>And this is the second slide's description</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-50" src="images/blossom.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>This is the third slide</h5>
+                            <p>And this is the third slide's description</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </header>
 
 
         <main>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/lifestyle.jpg" alt="Lifestyle">
+                    <h5>Lifestyle</h5>
+                </div>
+                <div class="card">
+                    <img src="images/food.jpg" alt="Food">
+                    <h5>Food</h5>
+                </div>
+                <div class="card">
+                    <img src="images/travel.jpg" alt="Travel">
+                    <h5>Travel</h5>
+                </div>
+            </div>
+
+
+            <div class="newsletter">
+                <div class="newsletter-text">
+                    <h5>Join my newsletter</h5>
+                    <p>Stay up-to-date and get the chance to win some freebies!</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="newsletter-join">
+                        <input type="email" placeholder="Type your e-mail here" name="email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+
+
 
             <div class="contents">
                 <div class="main-contents">
 
                     <div class="full-card">
-                        <div class="img">
-                            <img src="blog-posts/hd-wallpaper-gfa7a22e71_1280.jpg">
-                            <div class="overlay">
-                                <p class="tag">Front-End Design Portfolio Project</p>
-                                <h4 class="title">About this portfolio sample</h4>
-                                <p class="date">By Eleonora Rodriguez</p>
-                            </div>
-                        </div>
-
-                        <div id="share-buttons">
-                            <h6 class="share-title">Share my portfolio project!</h6>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <a class="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a class="sendemail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                        
-                        <p class="desc">Hi! I'm Eleonora Rodriguez and I'm a <strong>Front-End developer and web designer</strong>.</p>
-
-                        <p class="desc">The purpose of this portfolio sample is to emulate a WordPress-based blog, but using only <strong>HTML5, CSS3, JavaScript, and Bootstrap</strong>.</p>
-
-                        <p class="desc"><strong>So why not just upload a WordPress-based sample and that's it?</strong> Well, mainly because GitHub doesn't support PHP in live deployments (for now), and also because the main point of my projects is for me to prove what I can do with HTML, CSS, and JS alone.</p>
-
-                        <p class="desc">Since this website is only a portfolio sample to showcase my skills, most links will lead to either this explanatory blog post, <a href="https://www.linkedin.com/in/eleonorarod85/" target="_blank">my LinkedIn profile</a>, or <a href="https://elyrod85.github.io/EleonoraRod85/" target="_blank">my GitHub portfolio</a>.</p>
-
-                        <h6>Features:</h6>
-
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fa-solid fa-star"></i></span> As with all my portfolio projects, this blog sample is <strong>made by me from scratch</strong>, without using any templates.</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-star"></i></span> These pages are built using flexbox, to ensure they're <strong>100% responsive</strong>.</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-star"></i></span> Social <strong>icons</strong> are from <a href="https://fontawesome.com/" target="_blank">FontAwesome</a>.</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-star"></i></span> Google <strong>fonts</strong> used: <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a>, <a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank">Playfair Display</a>, and <a href="https://fonts.google.com/specimen/Clicker+Script" target="_blank">Clicker Script</a>.</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-star"></i></span> All photos are royalty-free stock <strong>photos</strong> from <a href="https://pixabay.com/" target="_blank">Pixabay</a> (except for my own photo in the sidebar, of course).</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-star"></i></span> By the way, did you know I made <strong>my own free stock photo search app</strong> using the Pexels API? <a href="https://elyrod85.github.io/ImageSearch/" target="_blank">Click here to check it out!</a></li>
-                        </ul>
-
-                        <h6>Get in touch!</h6>
-
-                        <p class="desc">You can contact me <a href="https://www.linkedin.com/in/eleonorarod85/" target="_blank">on LinkedIn</a>, or you can use the form below to send me an e-mail:</p>
-
-                        <div class="contact-form">
-                              <form action="https://formspree.io/f/xbjwnenl" method="POST">
-                                <label>Name:
-                                  <input type="name" name="name">
-                                </label>
-                                <label>E-mail:
-                                  <input type="email" name="email" required>
-                                </label>
-                                <label>Message:
-                                  <textarea name="message"></textarea>
-                                </label>
-                                <div class="buttons">
-                                  <button type="submit" class="button-center read">Send</button>
-                                </div>
-                              </form>
-                        </div>
-
+                        <img src="blog-posts/hd-wallpaper-gfa7a22e71_1280.jpg">
+                        <p class="tag">Lifestyle</p>
+                        <a href="about.html" class="title"><h4 class="title">About this portfolio sample</h4></a>
+                        <p class="date">June 20th, 2023</p>
+                        <p class="desc">Read this post to check out the features of this blog landing page sample!</p>
+                        <p class="desc">Keep in mind most links and forms are non-functional.</p>
+                        <a href="about.html" class="button-center"><button class="read">Read more</button></a>
                     </div>
 
+                    <div class="half-cards">
+                        <div class="half-card">
+                            <img src="blog-posts/lavender-g983ba09a7_1920.jpg">
+                            <p class="tag">Nature</p>
+                            <h4 class="title">The many uses of lavender</h4>
+                            <p class="date">June 21th, 2023</p>
+                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque urna neque, ullamcorper ut vestibulum nec, feugiat non purus. Suspendisse potenti. Etiam pretium eu nisi et tempus. Morbi dictum tortor vel lacus tincidunt, non congue sapien molestie.</p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+                        <div class="half-card">
+                            <img src="blog-posts/animal-gc999d12db_1920.jpg">
+                            <p class="tag">Pets</p>
+                            <h4 class="title">Who doesn't love cats?</h4>
+                            <p class="date">June 22th, 2023</p>
+                            <p class="desc">Sed sodales tempor pretium. Ut rhoncus in lectus et feugiat. Vestibulum quis erat quis urna elementum ullamcorper. Nam vel erat diam. Cras sapien purus, vulputate at consequat a, scelerisque eget eros. Proin sapien nisl, rhoncus non lacinia vitae, accumsan quis nisi. Donec ultricies leo in urna tristique, et aliquam metus vestibulum.</p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
 
+                        <div class="half-card">
+                            <img src="blog-posts/honey-gcc45878f8_1920.jpg">
+                            <p class="tag">Cooking</p>
+                            <h4 class="title">Recipes with honey</h4>
+                            <p class="date">June 23th, 2023</p>
+                            <p class="desc">Phasellus sollicitudin nisl et est bibendum imperdiet. Phasellus finibus lobortis porta. Integer cursus quis eros nec maximus. Phasellus faucibus venenatis iaculis. Donec nec consectetur enim. Vivamus vehicula sodales lacinia. </p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+                        <div class="half-card">
+                            <img src="blog-posts/azaleas-g8e9272573_1920.jpg">
+                            <p class="tag">Gardenkeeping</p>
+                            <h4 class="title">How to take care of azaleas</h4>
+                            <p class="date">June 24th, 2023</p>
+                            <p class="desc">Maecenas quis ligula erat. Sed nec eros arcu. Cras luctus egestas nisi eget condimentum. Nulla facilisi. Sed viverra egestas nibh, quis ultricies purus mattis eget. Praesent ornare felis ac tempor placerat. Pellentesque nec lacus vulputate, convallis lorem ac, porta dolor. </p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
 
-                    
+                        
+                        <div class="half-card">
+                            <img src="blog-posts/umbrella-gbe5dda871_1920.jpg">
+                            <p class="tag">Culture</p>
+                            <h4 class="title">The story of Japanese umbrellas</h4>
+                            <p class="date">June 25th, 2023</p>
+                            <p class="desc">Etiam finibus convallis diam at ultrices. Nunc pharetra iaculis vulputate. Praesent vel eros nec lacus lacinia lobortis. Nulla eu ultricies tortor, eget convallis lectus. Donec aliquam turpis nec tellus pulvinar, eget vehicula purus maximus. Curabitur eu convallis velit, at cursus magna. Phasellus placerat accumsan erat, nec congue mi posuere ac.</p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+                        <div class="half-card">
+                            <img src="blog-posts/roses-g6abb4a53c_1920.jpg">
+                            <p class="tag">Lifestyle</p>
+                            <h4 class="title">How to make rose oil</h4>
+                            <p class="date">June 26th, 2023</p>
+                            <p class="desc">Curabitur scelerisque mauris et iaculis consectetur. Mauris consectetur fringilla nibh sed gravida. In ac tellus nec purus bibendum aliquet in sed lorem. Vivamus mattis nec mauris sagittis sodales. Quisque suscipit nibh eu turpis consequat, nec imperdiet diam tempus. Praesent facilisis elit tincidunt blandit egestas. </p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+
+                        
+                        <div class="half-card">
+                            <img src="blog-posts/garlic-gad095e016_1920.jpg">
+                            <p class="tag">Home</p>
+                            <h4 class="title">Re-design your kitchen</h4>
+                            <p class="date">June 27th, 2023</p>
+                            <p class="desc">Curabitur tincidunt, dolor a porta imperdiet, neque augue elementum nibh, quis maximus ligula massa suscipit ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et lectus turpis. Nunc et metus leo. Ut placerat vel felis quis consectetur. Duis maximus, ante ut sodales tristique, urna ligula cursus nibh, et hendrerit orci ipsum congue metus.</p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+                        <div class="half-card">
+                            <img src="blog-posts/jam-g738db83ba_1920.jpg">
+                            <p class="tag">Health</p>
+                            <h4 class="title">The many benefits and uses of apples</h4>
+                            <p class="date">June 28th, 2023</p>
+                            <p class="desc">Vestibulum non condimentum erat, sed ultricies purus. Suspendisse fringilla sed nibh id aliquam. Aenean interdum lacus convallis tincidunt efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque posuere nunc augue. Morbi justo nunc, molestie vel tortor ut, lobortis aliquam arcu. </p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+
+                        <div class="half-card">
+                            <img src="blog-posts/garden-g3e4c2565e_1920.jpg">
+                            <p class="tag">Gardenkeeping</p>
+                            <h4 class="title">Prepare your garden for this Spring</h4>
+                            <p class="date">June 29th, 2023</p>
+                            <p class="desc">Pellentesque id dictum ex, ac efficitur dui. Fusce eu imperdiet dolor. Maecenas commodo scelerisque hendrerit. Vestibulum libero mi, aliquet sed urna fermentum, facilisis ornare diam. Ut ut dui vel nulla aliquet posuere. Phasellus dictum ipsum ante, eu eleifend ipsum dapibus varius. Aliquam luctus tortor sit amet lacus pulvinar sollicitudin. Fusce suscipit pulvinar porta. Donec cursus turpis id purus lacinia vehicula. </p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+                        <div class="half-card">
+                            <img src="blog-posts/garden-g78ef5fc65_1920.jpg">
+                            <p class="tag">Social life</p>
+                            <h4 class="title">The best spots for a tea party</h4>
+                            <p class="date">June 30th, 2023</p>
+                            <p class="desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam felis sapien, pharetra nec efficitur vel, consectetur quis augue. Cras felis mauris, vestibulum vitae dapibus at, laoreet in ante. Curabitur scelerisque tincidunt purus. Nulla vel turpis facilisis, eleifend sapien tincidunt, vulputate diam. Aliquam tempus eu ex id mollis. </p>
+                            <a href="about.html" class="button-center"><button class="read">Read more</button></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="pagination-e">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+                              <li class="page-item"><a class="page-link" href="about.html">2</a></li>
+                              <li class="page-item"><a class="page-link" href="about.html">3</a></li>
+                              <li class="page-item"><a class="page-link" href="about.html">4</a></li>
+                              <li class="page-item"><a class="page-link" href="about.html">5</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="about.html" aria-label="Next">
+                                  <span aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
 
 
@@ -282,6 +404,11 @@
                         </form>
                     </div>
 
+                    <div class="disclaimer">
+                        <h6 class="title">Disclaimer</h6>
+                        <p>Please keep in mind this is only a blog landing page sample and most links and forms are not functional. <a href="about.html">Check this post</a> to see how I built this portfolio sample and its features!</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -297,11 +424,19 @@
             <div class="social">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/eleonorarod85/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/eleonorarod85/"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
                     </li>
                     <li>
-                        <a href="https://elyrod85.github.io/EleonoraRod85/"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/eleonorarod85/"><i class="fa-brands fa-instagram"></i> Instagram</a>
                     </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eleonorarod85/"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eleonorarod85/"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eleonorarod85/"><i class="fa-brands fa-youtube"></i> Youtube</a>
                     </li>
                 </ul>
             </div>
@@ -327,6 +462,9 @@
             </div>
         </footer>
 
-        <script type="text/javascript" src="index.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
