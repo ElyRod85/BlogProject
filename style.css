@@ -392,6 +392,7 @@ main .cards {
 main .cards .card img {
     width: 100%;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 main .cards .card h5 {
@@ -513,7 +514,17 @@ main .newsletter .newsletter-form .newsletter-join button:hover {
     cursor: pointer;
 }
 
-
+@media (max-width: 768px) {
+    main .newsletter .newsletter-form .newsletter-join input {
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    
+    main .newsletter .newsletter-form .newsletter-join button {
+        display: block;
+        margin: 10px auto 10px auto;
+    }
+}
 
 
 
