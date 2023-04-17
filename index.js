@@ -1,5 +1,5 @@
   // Share buttons
-  const link = 'https://elyrod85.github.io/EleonoraRod85/';
+  const link = 'https://elyrod85.github.io/BlogProject/';
   const msg = encodeURIComponent('Eleonora is a Front-End Dev & Web Designer, check out her portfolio!');
   const title = encodeURIComponent(document.querySelector('title').textContent);
 
